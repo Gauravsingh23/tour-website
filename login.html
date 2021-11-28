@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body{
+            background-image:linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("images/img1.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        label{
+            font: 3em sans-serif;
+            color:white ;
+        }
+        .rememberMe{
+            font: 1em sans-serif;
+            color:white ;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 4%;
+            /* width: 100vw; */
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+            #b1
+        {
+            border: none;
+            background-color: #fa8a8a;
+            /* padding: 0px 20px; */
+            margin: auto 10px;
+            height: 40px;
+            box-shadow: 2px 2px 2px black;
+            width: 90px;
+            /* border: 1px solid orangered; */
+            font-weight: bold;
+            z-index: 9;
+            border-radius: 15px;
+        }
+        #b1:active
+        {
+            transform: scale(0.98); /*this adds clicking effect on button*/
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        }
+        #b1:hover
+        {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <div style="position: center;">
+
+            <form action="index.html" class="">
+                <label for="email">E-mail:</label>
+                 <br><input type="email" name="myemail" id="">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                 <br><input type="password" name="mypass" id="">
+                <div id="cancel">
+                    +
+                </div>
+
+                <input type="checkbox" name="mybox" id="check"><span class="rememberMe">rememberMe</span>
+                <div class="submit">
+                    <button type="submit" class="sub">Log In</button>
+                    <button type="submit" class="sub">Cancel</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
